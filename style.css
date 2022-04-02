@@ -1,0 +1,50 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background: rgb(15,15,15);
+   height: 100vh;
+   width: 100vw;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+}
+
+main {
+   width: 480px;
+
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+
+   gap: 4px;
+}
+
+
+
+div {
+   background: rgb(30,30,30);
+   width: 16px;
+   height: 16px;
+
+   filter: saturate(60%);
+
+  animation-duration: 1.5s;
+  animation-delay: 200ms;
+
+}
+
+@keyframes color {
+   to {
+   background: rgb(30,30,30);
+      box-shadow: none;
+   }
+ }
